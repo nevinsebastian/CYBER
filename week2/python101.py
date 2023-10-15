@@ -108,3 +108,73 @@ test_not = not True
 
 print(test_and,test_or,test_not)
 
+
+print('\n') #nev line
+
+#conditional statments
+print("Conditional Statments:")
+def soda(money):
+	if money >= 2:
+		return "You`ve got a soda"
+	else:
+		return "No soda for u!"
+print(soda(3))
+print(soda(1))
+
+print('\n') #nev line
+
+
+def alcohol(age,money):
+	if (age >= 21) and (money >= 5):
+		return "we are getting JAVAN"
+	elif (age >= 21) and (money < 5):
+		return "come back with more money"
+	elif (age < 21) and (money >= 5):
+		return "nice try kidd"
+	else:
+		return "you are too poor and too yound"
+	
+print(alcohol(21,5))
+print(alcohol(21,4))
+print(alcohol(20,4))
+
+
+print('\n') #nev line
+
+#Lists 
+
+print("List have brackets:")
+movies = ["churuli","RDX","kok"]
+
+print(movies[0])
+print(movies[0:3])
+print(movies[1:])
+print(movies[:1])
+print(movies[-1])
+print(len(movies))
+
+movies.append("kurup")
+print(movies)
+
+movies.pop()
+print(movies)
+
+movies.pop(1)
+print(movies)
+
+movies = ["churuli","RDX","kok"]
+person = ["karataikid","wolfofwall"]
+
+combined = zip(movies, person)
+print(list(combined))
+
+
+#Tuples
+print("Tuples have parentheses and cannot change")
+grades = ("A","B","C","D","E","F")
+print(grades[1])
+
+
+#Loopinf
+print("For loops - start to finish of iterate:")
+vegitables = ["cucumber", "spinach","cabbage"
