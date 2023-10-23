@@ -50,3 +50,18 @@ print(letter.lower() in word.lower())# Improved case insensitive
 word_two = "Bingo"
 print((letter.lower() in word.lower()) and not (letter.lower() in word_two.lower()))
 
+too_much_space = "     hello        "
+print(too_much_space.strip())
+
+full_name = "nevin sebastain"
+print(full_name.replace("nevin","Nevin"))
+print(full_name.find("sebastian"))
+
+movie = "The Hangover"
+print("My fav movie is {}.".format(movie))
+
+def fav_book(title, author):
+	fav = "My Fac book is \"{}\", which is written by {}".format(title,author)
+	return fav
+
+print(fav_book("The great Gatsby","f.Nevin"))
