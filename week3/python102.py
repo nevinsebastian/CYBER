@@ -65,3 +65,33 @@ def fav_book(title, author):
 	return fav
 
 print(fav_book("The great Gatsby","f.Nevin"))
+
+new_line()
+
+#Dicrionaries
+print("Dictionaries are keys and values:")
+drinks = {"white russians":7,"old fashion":10,"lemon drip":8,"buttery nipple":6}
+print(drinks)
+
+employees = {"Finance":["Bob","Linda","Tina"],"IT":["gena","LOUse","Teddy"],"HR":["Jimmy Jr","Mort"]}
+print(employees)
+
+employees["Legal"] = ["Mr. Frond"]
+print(employees)
+
+employees.update({"sales":["andie","shibu"]})
+print(employees)
+
+drinks["white russians"] = 8
+print(drinks)
+
+print(drinks.get("white russians"))
+print(drinks.get("white "))
+
+#List and disctionary
+movies = ["Kurup","rxd","Leo","nanpakal"]
+person = ["dasan","vijayan","arun","chappathi"]
+combined = zip(movies, person)
+movie_dictionary = {key: value for key, value in combined}
+
+print(movie_dictionary)
